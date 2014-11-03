@@ -1,5 +1,5 @@
 
-def beers(beers, crackers)  #give it a name and state the variables it will use
+def survey(beers, crackers)  #give the method a name and state the variables it will use
 
 prompt='>>>' #local variable to this method
 
@@ -64,7 +64,7 @@ case answer
 			puts "Thank you.\n"
 			beers = nil  #you must initialise and you must use nil not an i
 			crackers = nil
-			beers beers, crackers #call the method
+			survey beers, crackers #call the method
 	else
 			print "O.k. sorry for being nosey."
 
