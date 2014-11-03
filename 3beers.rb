@@ -1,11 +1,11 @@
 
-def survey(beers, crackers)  #give the method a name and state the variables it will use
+def survey(beers, crackers)  #give it a name and state the variables it will use
 
 prompt='>>>' #local variable to this method
 
 	attempts_left = 6
 	
-		puts "How many beers do you have?",prompt
+		puts "How many beers do you have?"
 	
 			until beers.is_a?(Integer) or attempts_left == 1  do
 	  
@@ -25,13 +25,13 @@ prompt='>>>' #local variable to this method
 		
 	attempts_left = 6
 	
-		puts "How many packets of crackers do you have?",prompt
+		puts "How many packets of crackers do you have?"
 	
 			until crackers.is_a?(Integer) or attempts_left == 1  do
 		  
 			   attempts_left = attempts_left-1
 			   		
-			   		if attempts_left == 1 then \
+			   		if attempts_left == 1 then
 			   			puts "(last chance to enter a number)"
 			   		else
 			   			puts"(You have #{attempts_left} remaining chances to enter a number)\n"
