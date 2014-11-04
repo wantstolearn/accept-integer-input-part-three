@@ -42,8 +42,12 @@ prompt='>>>' #local variable to this method
 			   crackers = Integer(gets) rescue "no"  
 			
 			end 
-
-	puts "Ok, you have #{beers} beers and #{crackers} crakcers"
+	
+	if beers > 10 then
+		puts "Wow, dude that is a lot of beer to go with your #{crackers} crackers."
+	else
+		puts "Ok, you have #{beers} beers and #{crackers} crakcers"
+	end
 
 end
 
